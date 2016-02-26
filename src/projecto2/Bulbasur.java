@@ -12,7 +12,7 @@ public class Bulbasur extends Pokemon{
     //Metodos
 
     @Override
-    public int ataque2() {//hoja rapida
+    public int ataque2() {//latigo cepa
        int daño=0;
        if(pp2 > 0){
            daño=ataque * 4;}
@@ -20,7 +20,7 @@ public class Bulbasur extends Pokemon{
     }
     
     @Override
-    public int ataque3() {//latigo cepa
+    public int ataque3() {//hoja afilada
         int daño=0;
        if(pp3 > 0){
            daño=ataque * 6;}
@@ -28,7 +28,7 @@ public class Bulbasur extends Pokemon{
     }
 
     @Override
-    public int ataque4() {//absorcion
+    public int ataque4() {//drenadoras
         
        if(pp4 > 0){
            hp=hp+10;}
