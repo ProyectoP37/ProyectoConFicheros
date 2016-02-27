@@ -10,7 +10,7 @@ public abstract class Pokemon {
     protected String nombrePoke;
     //Constructor
     public Pokemon(String nombrePoke) {
-        nivel= (int)(Math.random()*15)+1;//Le sumo 1 para tener como minimo el vivel 1.
+        nivel= (int)(Math.random()*20)+1;//Le sumo 1 para tener como minimo el vivel 1.
         this.ataque = nivel*7;
         this.defensa = nivel*2;
         this.hp = nivel*10;
