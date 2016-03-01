@@ -16,7 +16,7 @@ public class Entrenador {
      */
 
     public Entrenador(String nombre) {
-        int casos = (int) (Math.random() * 10);
+        int casos = (int) (Math.random() * 9);
         switch (casos) {
             case 0:
                 mochila.add(new Pikachu());
@@ -44,6 +44,9 @@ public class Entrenador {
                 break;
             case 8:
                 mochila.add(new Sandshrew());
+                break;
+            case 9:
+                mochila.add(new Gastly());
                 break;
         }
         this.nombre = nombre;
