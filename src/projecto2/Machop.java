@@ -14,7 +14,7 @@ public class Machop extends Pokemon{
     public int ataque2() {//Ultrapuño
        int daño=0;
        if(pp2 > 0){
-           daño=ataque * 5;}
+           daño=ataque +15;}
        return daño;
     }
     
@@ -22,7 +22,7 @@ public class Machop extends Pokemon{
     public int ataque3() {//Tajo Cruzado
         int daño=0;
        if(pp3 > 0){
-           daño=ataque * 6;}
+           daño=ataque +16;}
        return daño;
     }
 
@@ -30,7 +30,7 @@ public class Machop extends Pokemon{
     public int ataque4() {//Golpe Karate
         int daño=0;
        if(pp4 > 0){
-           daño=ataque * 3;}
+           daño=ataque +14;}
        return daño;
     }
 }

@@ -13,7 +13,7 @@ public class Sandshrew extends Pokemon{
     public int ataque2() {//Excavar
        int daño=0;
        if(pp2 > 0){
-           daño=ataque * 4;}
+           daño=ataque +14;}
        return daño;
     }
     
@@ -21,7 +21,7 @@ public class Sandshrew extends Pokemon{
     public int ataque3() {//Terremoto
         int daño=0;
        if(pp3 > 0){
-           daño=ataque * 8;}
+           daño=ataque +18;}
        return daño;
     }
 
@@ -29,7 +29,7 @@ public class Sandshrew extends Pokemon{
     public int ataque4() {//Arañazo
         int daño=0;
        if(pp4 > 0){
-           daño=ataque * 2;}
+           daño=ataque +12;}
        return daño;
     }
     

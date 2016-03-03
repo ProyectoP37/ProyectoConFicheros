@@ -11,11 +11,13 @@ public class Pikachu extends Pokemon{
     }
     //Metodos
 
+    
+
     @Override
     public int ataque2() {//rayo
        int daño=0;
        if(pp2 > 0){
-           daño=ataque * 4;}
+           daño=ataque ;}
        return daño;
     }
     
@@ -23,7 +25,7 @@ public class Pikachu extends Pokemon{
     public int ataque3() {//trueno
         int daño=0;
        if(pp3 > 0){
-           daño=ataque * 5;}
+           daño=ataque+10 ;}
        return daño;
     }
 
@@ -31,7 +33,7 @@ public class Pikachu extends Pokemon{
     public int ataque4() {//at.rapido
         int daño=0;
        if(pp4 > 0){
-           daño=ataque * 2;}
+           daño=ataque +15;}
        return daño;
     }
     

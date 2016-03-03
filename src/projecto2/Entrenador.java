@@ -69,27 +69,29 @@ public class Entrenador {
 
     public boolean capturarPokemon(Pokemon enemigo) {
         boolean capturado = false;
-        if (enemigo.getHp() == 0) {
+        
             int res = Integer.parseInt(JOptionPane.showInputDialog("Quieres hacere con " + enemigo.getNombrePoke() + "\n"
                     + "1.Si\n2.No"));
             switch (res) {
                 case 1:
                     mochila.add(enemigo);
                     capturado = true;
-                    System.out.println("¡¡¡Has conseguido un nuevo Pokemon!!!");
+                    JOptionPane.showMessageDialog(null,"¡¡¡Has conseguido un nuevo Pokemon!!!");
                     break;
                 case 2:
                     return false;
 
             }
-        }
+        
         return false;
     }
 
     public void mostrarMochila() {
-        System.out.println("Tienes: " + mochila.size() + " Pokemon");
+        String acumulador="";
+        JOptionPane.showMessageDialog(null,"Tienes: " + mochila.size() + " Pokemon");
         for (int i = 0; i < mochila.size(); i++) {
-            System.out.println("Nº: " + i + " Pokemon: " + mochila.get(i).toString());
+            acumulador=acumulador+"Nº: " + (i+1) +mochila.get(i).toString()+"\n";
+            JOptionPane.showMessageDialog(null,acumulador);
         }
     }
 

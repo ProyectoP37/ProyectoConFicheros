@@ -18,7 +18,7 @@ public class Batalla {
     }
 
     public void comienza() {
-        int aux = (int) (Math.random() * 9);
+        int aux = (int) (0);//Math.random() * 9);
         switch (aux) {
             case 0:
                 pokenemigo = new Charmander();
@@ -51,14 +51,27 @@ public class Batalla {
                 pokenemigo = new Drowzee();
                 break;
         }
+        JOptionPane.showMessageDialog(null,"Ha aparecido :"+pokenemigo.toString()+" salvaje");
         pokmio = elige();
+        //JOptionPane.showMessageDialog(null,pokenemigo.toString());
         do{
+           // JOptionPane.showMessageDialog(null,pokenemigo.toString());
+            //JOptionPane.showMessageDialog(null,pokmio.toString());
         mipelea();
         supelea();
+        if(pokenemigo.getHp()>0){
+            JOptionPane.showMessageDialog(null,pokenemigo.toString());}
+        else{JOptionPane.showMessageDialog(null,"Has derrotado a"+pokenemigo.getNombrePoke());
+        yo.capturarPokemon(pokenemigo);
+        break;}
+        if(pokmio.getHp()>0){
+            JOptionPane.showMessageDialog(null,pokmio.toString());}
+        else{JOptionPane.showMessageDialog(null,pokenemigo.getNombrePoke()+" Te ha derrotado ");}
+        
         }
         while (pokmio.getHp() > 0 && pokenemigo.getHp() > 0);
-        if(pokenemigo.getHp()>0)
-            yo.capturarPokemon(pokenemigo);
+        /*if(pokenemigo.getHp()<=0)
+            yo.capturarPokemon(pokenemigo);*/
         
        }
 
@@ -66,11 +79,11 @@ public class Batalla {
         // boolean disponible = true;
         int opcion;
         //do {
-            pokenemigo.toString();
-            pokmio.toString();
+           // JOptionPane.showMessageDialog(null,pokenemigo.toString());
+           // JOptionPane.showMessageDialog(null,pokmio.toString());
             do {
-                opcion = Integer.parseInt(JOptionPane.showInputDialog("Elija un ataque:\n1.Placaje. PP: " + pokmio.getPp1() + "\n2." + pokmio.ataque2() + " PP: " + pokmio.getPp2() + "\n"
-                        + "3." + pokmio.ataque3() + " PP: " + pokmio.getPp3() + "\n4." + pokmio.ataque4() + " PP: " + pokmio.getPp4()));
+                opcion = Integer.parseInt(JOptionPane.showInputDialog("Elija un ataque:\n1. Placaje. PP: " + pokmio.getPp1() + "\n2. " + pokmio.ataque2() + " PP: " + pokmio.getPp2() + "\n"
+                        + "3. " + pokmio.ataque3() + " PP: " + pokmio.getPp3() + "\n4. " + pokmio.ataque4() + " PP: " + pokmio.getPp4()));
 
             } while (opcion < 1 || opcion > 4);
 
@@ -94,8 +107,8 @@ public class Batalla {
     public void supelea(){
         int opcion;
        // do {
-            pokenemigo.toString();
-            pokmio.toString();
+          // JOptionPane.showMessageDialog(null,pokenemigo.toString());
+            //JOptionPane.showMessageDialog(null,pokmio.toString());
             
              opcion = (int) (Math.random() * 4);
 
@@ -117,9 +130,9 @@ public class Batalla {
        // } while (pokmio.getHp() > 0 && pokenemigo.getHp() > 0);
     }
     public Pokemon elige() {
-
+        yo.mostrarMochila();
         int opcion = Integer.parseInt(JOptionPane.showInputDialog("Elige tu pokemon: "));
-        return yo.elegirPokemon(opcion);
+        return yo.elegirPokemon(opcion-1);
 
     }
 }

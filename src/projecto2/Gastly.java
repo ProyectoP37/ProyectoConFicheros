@@ -14,7 +14,7 @@ public class Gastly extends Pokemon{
     public int ataque2() {//Pulso umbrio
        int daño=0;
        if(pp2 > 0){
-           daño=ataque * 4;}
+           daño=ataque +14;}
        return daño;
     }
     
@@ -22,7 +22,7 @@ public class Gastly extends Pokemon{
     public int ataque3() {//Bola Sombra
         int daño=0;
        if(pp3 > 0){
-           daño=ataque * 7;}
+           daño=ataque +17;}
        return daño;
     }
 
@@ -30,7 +30,7 @@ public class Gastly extends Pokemon{
     public int ataque4() {//Tinieblas
         int daño=0;
        if(pp4 > 0){
-           daño=ataque * 3;}
+           daño=ataque +13;}
        return daño;
     }
 }

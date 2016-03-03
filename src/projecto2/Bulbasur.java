@@ -12,10 +12,12 @@ public class Bulbasur extends Pokemon{
     //Metodos
 
     @Override
+    
     public int ataque2() {//latigo cepa
+        
        int daño=0;
        if(pp2 > 0){
-           daño=ataque * 4;}
+           daño=ataque +15;}
        return daño;
     }
     
@@ -23,7 +25,7 @@ public class Bulbasur extends Pokemon{
     public int ataque3() {//hoja afilada
         int daño=0;
        if(pp3 > 0){
-           daño=ataque * 6;}
+           daño=ataque +20;}
        return daño;
     }
 
