@@ -6,18 +6,17 @@ package projecto2;
  */
 public abstract class Pokemon {
     
-    protected int ataque,nivel,hp,pp1,pp2,pp3,pp4;//Estas son las estadisticas y ataques que uede realizar el pokemon.
+    protected int ataque,nivel,hp;//Estas son las estadisticas y ataques que uede realizar el pokemon.
     protected String nombrePoke;
     //Constructor
     public Pokemon(String nombrePoke) {
+        
         nivel= (int)(5);//Math.random()*20)+1;//Le sumo 1 para tener como minimo el nivel 1.
+        int vida=nivel*10;
         this.ataque = nivel+20;
         //this.defensa = nivel*2;
-        this.hp = nivel*10;
-        pp1=10;
-        pp2=10;
-        pp3=10;
-        pp4=10;
+        this.hp = vida;
+        
         this.nombrePoke = nombrePoke;
     }
 
@@ -37,38 +36,6 @@ public abstract class Pokemon {
         return hp;
     }
 
-    public int getPp1() {
-        return pp1;
-    }
-
-    public void setPp1(int pp1) {
-        this.pp1 = pp1;
-    }
-
-    public int getPp2() {
-        return pp2;
-    }
-
-    public void setPp2(int pp2) {
-        this.pp2 = pp2;
-    }
-
-    public int getPp3() {
-        return pp3;
-    }
-
-    public void setPp3(int pp3) {
-        this.pp3 = pp3;
-    }
-
-    public int getPp4() {
-        return pp4;
-    }
-
-    public void setPp4(int pp4) {
-        this.pp4 = pp4;
-    }
-
     public String getNombrePoke() {
         return nombrePoke;
     }
@@ -77,9 +44,9 @@ public abstract class Pokemon {
     public int placaje(){
 		int daño = 0;
 		
-		if(pp1 > 0){
+		
 			daño = ataque;
-		}
+		
 		return daño;
 	}
     public int dañoRecibido(int daño){
@@ -95,7 +62,7 @@ public abstract class Pokemon {
 
     @Override
     public String toString() {
-        return " Pokemon: "+ nombrePoke + " , Nivel=" + nivel + " , Hp=" + hp;
+        return " Un "+ nombrePoke + " , Nivel=" + nivel + " , Hp=" + hp;
     }
     
 

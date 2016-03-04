@@ -82,8 +82,8 @@ public class Batalla {
            // JOptionPane.showMessageDialog(null,pokenemigo.toString());
            // JOptionPane.showMessageDialog(null,pokmio.toString());
             do {
-                opcion = Integer.parseInt(JOptionPane.showInputDialog("Elija un ataque:\n1. Placaje. PP: " + pokmio.getPp1() + "\n2. " + pokmio.ataque2() + " PP: " + pokmio.getPp2() + "\n"
-                        + "3. " + pokmio.ataque3() + " PP: " + pokmio.getPp3() + "\n4. " + pokmio.ataque4() + " PP: " + pokmio.getPp4()));
+                opcion = Integer.parseInt(JOptionPane.showInputDialog("Elija un ataque:\n1. Placaje.\n2. " + pokmio.ataque2() + "\n"
+                        + "3. " + pokmio.ataque3() + "\n4. " + pokmio.ataque4()));
 
             } while (opcion < 1 || opcion > 4);
 
