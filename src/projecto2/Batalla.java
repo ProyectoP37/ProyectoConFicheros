@@ -53,10 +53,11 @@ public class Batalla {
         }
         JOptionPane.showMessageDialog(null,"Ha aparecido :"+pokenemigo.toString()+" salvaje");
         pokmio = elige();
-        //JOptionPane.showMessageDialog(null,pokenemigo.toString());
+        int vida1=pokmio.getHp();
+        int vida2=pokenemigo.getHp();
+        
         do{
-           // JOptionPane.showMessageDialog(null,pokenemigo.toString());
-            //JOptionPane.showMessageDialog(null,pokmio.toString());
+           
         mipelea();
         supelea();
         if(pokenemigo.getHp()>0){
@@ -70,17 +71,15 @@ public class Batalla {
         
         }
         while (pokmio.getHp() > 0 && pokenemigo.getHp() > 0);
-        /*if(pokenemigo.getHp()<=0)
-            yo.capturarPokemon(pokenemigo);*/
+        pokmio.setHp(vida1);
+        pokenemigo.setHp(vida2);
         
        }
 
     public void mipelea() {
-        // boolean disponible = true;
+       
         int opcion;
-        //do {
-           // JOptionPane.showMessageDialog(null,pokenemigo.toString());
-           // JOptionPane.showMessageDialog(null,pokmio.toString());
+        
             do {
                 opcion = Integer.parseInt(JOptionPane.showInputDialog("Elija un ataque:\n1. Placaje.\n2. " + pokmio.ataque2() + "\n"
                         + "3. " + pokmio.ataque3() + "\n4. " + pokmio.ataque4()));
@@ -102,14 +101,11 @@ public class Batalla {
                     break;
             }
 
-        } //while (pokmio.getHp() > 0 && pokenemigo.getHp() > 0);
-  //  }
+        } 
+  
     public void supelea(){
         int opcion;
-       // do {
-          // JOptionPane.showMessageDialog(null,pokenemigo.toString());
-            //JOptionPane.showMessageDialog(null,pokmio.toString());
-            
+                   
              opcion = (int) (Math.random() * 4);
 
             switch (opcion) {
@@ -127,7 +123,7 @@ public class Batalla {
                     break;
             }
 
-       // } while (pokmio.getHp() > 0 && pokenemigo.getHp() > 0);
+       
     }
     public Pokemon elige() {
         yo.mostrarMochila();

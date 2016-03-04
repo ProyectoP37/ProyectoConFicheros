@@ -12,10 +12,10 @@ public abstract class Pokemon {
     public Pokemon(String nombrePoke) {
         
         nivel= (int)(5);//Math.random()*20)+1;//Le sumo 1 para tener como minimo el nivel 1.
-        int vida=nivel*10;
+       
         this.ataque = nivel+20;
-        //this.defensa = nivel*2;
-        this.hp = vida;
+     
+        this.hp = nivel*10;
         
         this.nombrePoke = nombrePoke;
     }
@@ -23,10 +23,6 @@ public abstract class Pokemon {
     public int getAtaque() {
         return ataque;
     }
-
-   /* public int getDefensa() {
-        return defensa;
-    }*/
 
     public int getNivel() {
         return nivel;
@@ -36,10 +32,15 @@ public abstract class Pokemon {
         return hp;
     }
 
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+    
+
     public String getNombrePoke() {
         return nombrePoke;
     }
-    //Los ataques deben tener el pp mayor que 0 sino no se realizara ningun ataque.
+    
     //Ataque1 va a ser placaje para todos los pokemons y quita de dañ lo mismo que tega de ataque el pokemon
     public int placaje(){
 		int daño = 0;
