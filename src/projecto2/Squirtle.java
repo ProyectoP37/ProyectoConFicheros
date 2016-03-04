@@ -5,16 +5,29 @@ package projecto2;
  */
 
 public class Squirtle extends Pokemon{
+       
     public Squirtle() {
         super("Squirtle");
     }
     //Metodos
 
+    public String getAtaq2() {
+        return " Rayo Burbuja ";
+    }
+
+    public String getAtaq3() {
+        return " Pistola Agua ";
+    }
+
+    public String getAtaq4() {
+        return " Mordisco ";
+    }
+
     @Override
     public int ataque2() {//Rayo burbuja
        int daño=0;
       
-           daño=ataque +14;
+           daño=ataque +16;
        return daño;
     }
     
@@ -22,7 +35,7 @@ public class Squirtle extends Pokemon{
     public int ataque3() {//Pistola Agua
         int daño=0;
       
-           daño=ataque +15;
+           daño=ataque +12;
        return daño;
     }
 

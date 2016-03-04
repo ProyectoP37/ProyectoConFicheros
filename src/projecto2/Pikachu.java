@@ -5,13 +5,23 @@ package projecto2;
  * @author mario
  */
 public class Pikachu extends Pokemon{
-
+    
     public Pikachu() {
         super("Pikachu");
     }
     //Metodos
 
-    
+    public String getAtaq2() {
+        return " Rayo ";
+    }
+
+    public String getAtaq3() {
+        return " Trueno ";
+    }
+
+    public String getAtaq4() {
+        return " At.Rapido ";
+    }
 
     @Override
     public int ataque2() {//rayo

@@ -5,11 +5,22 @@ package projecto2;
  */
 public class Bulbasur extends Pokemon{
     
-
     public Bulbasur() {
         super("Bulbasur");
     }
     //Metodos
+
+    public String getAtaq2() {
+        return " Látigo Cepa ";
+    }
+
+    public String getAtaq3() {
+        return " Hoja Afilada ";
+    }
+
+    public String getAtaq4() {
+        return " Corte ";
+    }
 
     @Override
     
@@ -30,9 +41,10 @@ public class Bulbasur extends Pokemon{
     }
 
     @Override
-    public int ataque4() {//drenadoras
+    public int ataque4() {//corte
         
+       int daño=0;
        
-           hp=hp+10;
-       return hp;
+           daño=ataque +13;
+       return daño;
     } }

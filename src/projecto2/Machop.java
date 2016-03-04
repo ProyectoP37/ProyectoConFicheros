@@ -5,11 +5,22 @@ package projecto2;
  * @author jgarciaamor
  */
 public class Machop extends Pokemon{
+    
     public Machop() {
         super("Machop");
     }
     //Metodos
+public String getAtaq2() {
+        return " UltraPuño ";
+    }
 
+    public String getAtaq3() {
+        return " Tajo Cruzado ";
+    }
+
+    public String getAtaq4() {
+        return " Golpe Karate ";
+    }
     @Override
     public int ataque2() {//Ultrapuño
        int daño=0;

@@ -81,8 +81,8 @@ public class Batalla {
         int opcion;
         
             do {
-                opcion = Integer.parseInt(JOptionPane.showInputDialog("Elija un ataque:\n1. Placaje.\n2. " + pokmio.ataque2() + "\n"
-                        + "3. " + pokmio.ataque3() + "\n4. " + pokmio.ataque4()));
+                opcion = Integer.parseInt(JOptionPane.showInputDialog("Elija un ataque:\n1. Placaje.\n2." + pokmio.getAtaq2() + "\n"
+                        + "3." + pokmio.getAtaq3() + "\n4." + pokmio.getAtaq4()));
 
             } while (opcion < 1 || opcion > 4);
 
@@ -106,7 +106,7 @@ public class Batalla {
     public void supelea(){
         int opcion;
                    
-             opcion = (int) (Math.random() * 4);
+             opcion = (int) (Math.random() * 4)+1;
 
             switch (opcion) {
                 case 1:

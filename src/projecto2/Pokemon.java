@@ -8,6 +8,7 @@ public abstract class Pokemon {
     
     protected int ataque,nivel,hp;//Estas son las estadisticas y ataques que uede realizar el pokemon.
     protected String nombrePoke;
+    protected String ataq2,ataq3,ataq4;
     //Constructor
     public Pokemon(String nombrePoke) {
         
@@ -18,6 +19,18 @@ public abstract class Pokemon {
         this.hp = nivel*10;
         
         this.nombrePoke = nombrePoke;
+    }
+
+    public String getAtaq2() {
+        return ataq2;
+    }
+
+    public String getAtaq3() {
+        return ataq3;
+    }
+
+    public String getAtaq4() {
+        return ataq4;
     }
 
     public int getAtaque() {
