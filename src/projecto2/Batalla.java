@@ -63,6 +63,9 @@ public class Batalla {
         if(pokenemigo.getHp()>0){
             JOptionPane.showMessageDialog(null,pokenemigo.toString());}
         else{JOptionPane.showMessageDialog(null,"Has derrotado a "+pokenemigo.getNombrePoke());
+       int nuevNiv=pokmio.getNivel();
+        pokmio.setNivel(nuevNiv+1);
+        JOptionPane.showMessageDialog(null,pokmio.getNombrePoke()+" Ha subido al nivel"+pokmio.getNivel());
         yo.capturarPokemon(pokenemigo);
         break;}
         if(pokmio.getHp()>0){
