@@ -16,9 +16,9 @@ public class Batalla {
     public Batalla(Entrenador yo) {
         this.yo = yo;
     }
-
+    
     public void comienza() {
-        int aux = (int) (0);//Math.random() * 9);
+        int aux = (int)(Math.random() * 9);
         switch (aux) {
             case 0:
                 pokenemigo = new Charmander();
@@ -51,7 +51,7 @@ public class Batalla {
                 pokenemigo = new Drowzee();
                 break;
         }
-        JOptionPane.showMessageDialog(null,"Ha aparecido :"+pokenemigo.toString()+" salvaje");
+        JOptionPane.showMessageDialog(null,"Ha aparecido un: "+pokenemigo.toString()+" salvaje");
         pokmio = elige();
         int vida1=pokmio.getHp();
         int vida2=pokenemigo.getHp();
@@ -62,7 +62,7 @@ public class Batalla {
         supelea();
         if(pokenemigo.getHp()>0){
             JOptionPane.showMessageDialog(null,pokenemigo.toString());}
-        else{JOptionPane.showMessageDialog(null,"Has derrotado a"+pokenemigo.getNombrePoke());
+        else{JOptionPane.showMessageDialog(null,"Has derrotado a "+pokenemigo.getNombrePoke());
         yo.capturarPokemon(pokenemigo);
         break;}
         if(pokmio.getHp()>0){

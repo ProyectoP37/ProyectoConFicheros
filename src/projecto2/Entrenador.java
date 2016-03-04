@@ -16,7 +16,7 @@ public class Entrenador {
      */
 
     public Entrenador(String nombre) {
-        int casos = (int) 2;//(Math.random() * 9);
+        int casos = (int) (Math.random() * 9);
         switch (casos) {
             case 0:
                 mochila.add(new Pikachu());
@@ -70,7 +70,7 @@ public class Entrenador {
     public boolean capturarPokemon(Pokemon enemigo) {
         boolean capturado = false;
         
-            int res = Integer.parseInt(JOptionPane.showInputDialog("Quieres hacere con " + enemigo.getNombrePoke() + "\n"
+            int res = Integer.parseInt(JOptionPane.showInputDialog("Quieres hacere con un " + enemigo.getNombrePoke() + "\n"
                     + "1.Si\n2.No"));
             switch (res) {
                 case 1:
@@ -90,7 +90,7 @@ public class Entrenador {
         String acumulador="";
         JOptionPane.showMessageDialog(null,"Tienes: " + mochila.size() + " Pokemon");
         for (int i = 0; i < mochila.size(); i++) {
-            acumulador=acumulador+"Nº: " + (i+1) +mochila.get(i).toString()+"\n";
+            acumulador=acumulador+"Nº: " + (i+1)+" " +mochila.get(i).toString()+"\n";
             JOptionPane.showMessageDialog(null,acumulador);
         }
     }
