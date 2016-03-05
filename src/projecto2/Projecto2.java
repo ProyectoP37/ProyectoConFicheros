@@ -9,7 +9,8 @@ import javax.swing.JOptionPane;
 public class Projecto2 {
 
     public static void main(String[] args) {
-        
+       /* LerFicheiro ler= new LerFicheiro();
+        ler.lerFich("Pokemon.txt");*/
 		String nombre;
 		int opcion;
                // Pokemon pokmio = null;
@@ -31,6 +32,7 @@ public class Projecto2 {
 			}
 			
 		}while(opcion != 2);
+                
 	}
     }
     
