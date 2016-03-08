@@ -16,38 +16,39 @@ public class Entrenador {
      */
 
     public Entrenador(String nombre) {
-        int casos = (int) (Math.random() * 9);
-        switch (casos) {
-            case 0:
-                mochila.add(new Pikachu());
-                break;
-            case 1:
-                mochila.add(new Charmander());
+        
+      int casos = Integer.parseInt(JOptionPane.showInputDialog("Elige tu pokemon preferido\n1.Squirtle\n2.Charmander\n3.Bulbasur"));
+      switch (casos) {
+          case 1:
+                
+                mochila.add(new Squirtle());//.setNivel(5));
+                for (int i = 0; i < mochila.size(); i++) {
+                    if("Squirtle".equals(mochila.get(i).getNombrePoke())){
+                    mochila.get(i).setNivel(5);
+                    mochila.get(i).setHp(5*10);
+                    mochila.get(i).setAtaque(5+20);}
+              }
                 break;
             case 2:
-                mochila.add(new Bulbasur());
+                mochila.add(new Charmander());
+                for (int i = 0; i < mochila.size(); i++) {
+                    if("Charmander".equals(mochila.get(i).getNombrePoke())){
+                    mochila.get(i).setNivel(5);
+                    mochila.get(i).setHp(5*10);
+                    mochila.get(i).setAtaque(5+20);}
+              }
                 break;
             case 3:
-                mochila.add(new Squirtle());
+                mochila.add(new Bulbasur());
+                for (int i = 0; i < mochila.size(); i++) {
+                    if("Bulbasur".equals(mochila.get(i).getNombrePoke())){
+                    mochila.get(i).setNivel(5);
+                    mochila.get(i).setHp(5*10);
+                    mochila.get(i).setAtaque(5+20);}
+              }
                 break;
-            case 4:
-                mochila.add(new Drowzee());
-                break;
-            case 5:
-                mochila.add(new Ekans());
-                break;
-            case 6:
-                mochila.add(new Machop());
-                break;
-            case 7:
-                mochila.add(new Onix());
-                break;
-            case 8:
-                mochila.add(new Sandshrew());
-                break;
-            case 9:
-                mochila.add(new Gastly());
-                break;
+            
+             
         }
         this.nombre = nombre;
     }
@@ -89,10 +90,11 @@ public class Entrenador {
     public void mostrarMochila() {
         String acumulador="";
         JOptionPane.showMessageDialog(null,"Tienes: " + mochila.size() + " Pokemon");
+        
         for (int i = 0; i < mochila.size(); i++) {
             acumulador=acumulador+"Nº: " + (i+1)+" " +mochila.get(i).toString()+"\n";
-            JOptionPane.showMessageDialog(null,acumulador);
-        }
+           
+        } JOptionPane.showMessageDialog(null,acumulador);
     }
 
 }

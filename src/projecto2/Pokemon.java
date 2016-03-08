@@ -12,7 +12,7 @@ public abstract class Pokemon {
     //Constructor
     public Pokemon(String nombrePoke) {
         
-        nivel= (int) (Math.random()*20)+1;//Le sumo 1 para tener como minimo el nivel 1.
+      nivel= (int) (Math.random()*20)+1;//Le sumo 1 para tener como minimo el nivel 1.
        
         this.ataque = nivel+20;
      
@@ -20,7 +20,8 @@ public abstract class Pokemon {
         
         this.nombrePoke = nombrePoke;
     }
-
+   
+    
     public String getAtaq2() {
         return ataq2;
     }
@@ -39,6 +40,10 @@ public abstract class Pokemon {
 
     public int getNivel() {
         return nivel;
+    }
+
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
     }
 
     public void setNivel(int nivel) {
