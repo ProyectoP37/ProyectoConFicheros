@@ -94,15 +94,19 @@ public class Batalla {
             switch (opcion) {
                 case 1:
                     pokenemigo.dañoRecibido(pokmio.placaje());
+                    JOptionPane.showConfirmDialog(null,pokmio.getNombrePoke()+" Uso Placaje");
                     break;
                 case 2:
                     pokenemigo.dañoRecibido(pokmio.ataque2());
+                    JOptionPane.showConfirmDialog(null,pokmio.getNombrePoke()+" Uso "+pokmio.getAtaq2());
                     break;
                 case 3:
                     pokenemigo.dañoRecibido(pokmio.ataque3());
+                    JOptionPane.showConfirmDialog(null,pokmio.getNombrePoke()+" Uso "+pokmio.getAtaq3());
                     break;
                 case 4:
                     pokenemigo.dañoRecibido(pokmio.ataque4());
+                    JOptionPane.showConfirmDialog(null,pokmio.getNombrePoke()+" Uso "+pokmio.getAtaq4());
                     break;
             }
 
@@ -116,15 +120,19 @@ public class Batalla {
             switch (opcion) {
                 case 1:
                     pokmio.dañoRecibido(pokenemigo.placaje());
+                    JOptionPane.showConfirmDialog(null,pokenemigo.getNombrePoke()+" Uso Placaje");
                     break;
                 case 2:
                     pokmio.dañoRecibido(pokenemigo.ataque2());
+                    JOptionPane.showConfirmDialog(null,pokenemigo.getNombrePoke()+" Uso "+pokenemigo.getAtaq2());
                     break;
                 case 3:
                     pokmio.dañoRecibido(pokenemigo.ataque3());
+                    JOptionPane.showConfirmDialog(null,pokenemigo.getNombrePoke()+" Uso "+pokenemigo.getAtaq3());
                     break;
                 case 4:
                     pokmio.dañoRecibido(pokenemigo.ataque4());
+                    JOptionPane.showConfirmDialog(null,pokenemigo.getNombrePoke()+" Uso "+pokenemigo.getAtaq4());
                     break;
             }
 
