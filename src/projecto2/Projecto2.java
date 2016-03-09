@@ -13,10 +13,10 @@ public class Projecto2 {
         ler.lerFich("Pokemon.txt");*/
 		String nombre;
 		int opcion;
-               
+                
 		
-		nombre=JOptionPane.showInputDialog("¿Cual es tu nombre?");
-		JOptionPane.showMessageDialog(null,"Hola "+ nombre+"\n¿Que tal?\nSoy el profesor Oak.\nAhora te entregare un Pokemon al nivel 5.\nSuerte en el torneo");
+		nombre=JOptionPane.showInputDialog("Hola soy el profesor Oak.\nBienvenido a este juego.\nEl objetivo de este juego es llegar\nal nivel 15 con algun Pokemon.\n¿Cual es tu nombre?");
+		JOptionPane.showMessageDialog(null,"Hola "+ nombre+"\nAhora te entregare un Pokemon al nivel 5.\nSuerte en el el mundo Pokemon");
 		
 		Entrenador yo = new Entrenador(nombre);
 		Batalla bat = new Batalla(yo);

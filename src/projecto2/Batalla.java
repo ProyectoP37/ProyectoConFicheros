@@ -18,6 +18,50 @@ public class Batalla {
     }
     
     public void comienza() {
+        elegirPokEnemigo();
+        JOptionPane.showMessageDialog(null,"Ha aparecido un: "+pokenemigo.toString()+" salvaje");
+        pokmio = elige();
+        int vida1=pokmio.getHp();
+        int vida2=pokenemigo.getHp();
+        
+        do{
+           
+        mipelea();
+        if(pokenemigo.getHp()>0){
+        supelea();
+        //if(pokenemigo.getHp()>0){
+            JOptionPane.showMessageDialog(null,pokenemigo.toString());}
+            else{JOptionPane.showMessageDialog(null,"Has derrotado a "+pokenemigo.getNombrePoke());
+        System.out.println(pokmio.getNivel());
+                System.out.println(pokmio.getAtaque());
+                System.out.println(pokmio.getHp());
+                int nuevNiv=pokmio.getNivel();
+                
+                int aux=nuevNiv+1;
+                
+                pokmio.setNivel(aux);
+                pokmio.setAtaque(aux+20);
+                pokmio.setHp(aux*10);
+                System.out.println(pokmio.getNivel());
+                System.out.println(pokmio.getAtaque());
+                System.out.println(pokmio.getHp());
+                JOptionPane.showMessageDialog(null,pokmio.getNombrePoke()+" Ha subido al nivel "+pokmio.getNivel());
+                yo.capturarPokemon(pokenemigo);
+                //ganas();
+                break;}
+        
+        if(pokmio.getHp()>0){
+            JOptionPane.showMessageDialog(null,pokmio.toString());}
+             else{JOptionPane.showMessageDialog(null,pokenemigo.getNombrePoke()+" Te ha derrotado ");}
+        
+                 }
+        while (pokmio.getHp() > 0 && pokenemigo.getHp() > 0);
+        pokmio.setHp(vida1);
+        pokenemigo.setHp(vida2);
+        
+       }
+
+    public void elegirPokEnemigo() {
         int aux = (int)(Math.random() * 9);
         switch (aux) {
             case 0:
@@ -51,37 +95,7 @@ public class Batalla {
                 pokenemigo = new Drowzee();
                 break;
         }
-        JOptionPane.showMessageDialog(null,"Ha aparecido un: "+pokenemigo.toString()+" salvaje");
-        pokmio = elige();
-        int vida1=pokmio.getHp();
-        int vida2=pokenemigo.getHp();
-        
-        do{
-           
-        mipelea();
-        supelea();
-        if(pokenemigo.getHp()>0){
-            JOptionPane.showMessageDialog(null,pokenemigo.toString());}
-            else{JOptionPane.showMessageDialog(null,"Has derrotado a "+pokenemigo.getNombrePoke());
-        
-                int nuevNiv=pokmio.getNivel();
-                pokmio.setNivel(nuevNiv++);
-                pokmio.setAtaque((nuevNiv++)+20);
-                pokmio.setHp((nuevNiv++)*10);
-                JOptionPane.showMessageDialog(null,pokmio.getNombrePoke()+" Ha subido al nivel "+pokmio.getNivel());
-                yo.capturarPokemon(pokenemigo);
-                break;}
-        
-        if(pokmio.getHp()>0){
-            JOptionPane.showMessageDialog(null,pokmio.toString());}
-             else{JOptionPane.showMessageDialog(null,pokenemigo.getNombrePoke()+" Te ha derrotado ");}
-        
-                 }
-        while (pokmio.getHp() > 0 && pokenemigo.getHp() > 0);
-        pokmio.setHp(vida1);
-        pokenemigo.setHp(vida2);
-        
-       }
+    }
 
     public void mipelea() {
        
@@ -148,5 +162,17 @@ public class Batalla {
         int opcion = Integer.parseInt(JOptionPane.showInputDialog("Elige tu pokemon: "));
         return yo.elegirPokemon(opcion-1);
 
+    }
+    public void ganas(){
+        JOptionPane.showMessageDialog(null,"Has derrotado a "+pokenemigo.getNombrePoke());
+        
+                int nuevNiv=pokmio.getNivel();
+                int aux=nuevNiv++;
+                pokmio.setNivel(aux);
+                pokmio.setAtaque(aux+20);
+                pokmio.setHp(aux*10);
+                JOptionPane.showMessageDialog(null,pokmio.getNombrePoke()+" Ha subido al nivel "+pokmio.getNivel());
+                yo.capturarPokemon(pokenemigo);
+        
     }
 }
