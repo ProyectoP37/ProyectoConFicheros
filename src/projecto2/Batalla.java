@@ -62,19 +62,21 @@ public class Batalla {
         supelea();
         if(pokenemigo.getHp()>0){
             JOptionPane.showMessageDialog(null,pokenemigo.toString());}
-        else{JOptionPane.showMessageDialog(null,"Has derrotado a "+pokenemigo.getNombrePoke());
+            else{JOptionPane.showMessageDialog(null,"Has derrotado a "+pokenemigo.getNombrePoke());
         
-       int nuevNiv=pokmio.getNivel();
-        pokmio.setNivel(nuevNiv+1);
-        JOptionPane.showMessageDialog(null,pokmio.getNombrePoke()+" Ha subido al nivel"+pokmio.getNivel());
-        yo.capturarPokemon(pokenemigo);
-        break;}
+                int nuevNiv=pokmio.getNivel();
+                pokmio.setNivel(nuevNiv++);
+                pokmio.setAtaque((nuevNiv++)+20);
+                pokmio.setHp((nuevNiv++)*10);
+                JOptionPane.showMessageDialog(null,pokmio.getNombrePoke()+" Ha subido al nivel "+pokmio.getNivel());
+                yo.capturarPokemon(pokenemigo);
+                break;}
         
         if(pokmio.getHp()>0){
             JOptionPane.showMessageDialog(null,pokmio.toString());}
-        else{JOptionPane.showMessageDialog(null,pokenemigo.getNombrePoke()+" Te ha derrotado ");}
+             else{JOptionPane.showMessageDialog(null,pokenemigo.getNombrePoke()+" Te ha derrotado ");}
         
-        }
+                 }
         while (pokmio.getHp() > 0 && pokenemigo.getHp() > 0);
         pokmio.setHp(vida1);
         pokenemigo.setHp(vida2);
@@ -124,14 +126,17 @@ public class Batalla {
                     break;
                 case 2:
                     pokmio.dañoRecibido(pokenemigo.ataque2());
+                    
                     JOptionPane.showMessageDialog(null,pokenemigo.getNombrePoke()+" Uso "+pokenemigo.getAtaq2());
                     break;
                 case 3:
                     pokmio.dañoRecibido(pokenemigo.ataque3());
+                    
                     JOptionPane.showMessageDialog(null,pokenemigo.getNombrePoke()+" Uso "+pokenemigo.getAtaq3());
                     break;
                 case 4:
                     pokmio.dañoRecibido(pokenemigo.ataque4());
+                    
                     JOptionPane.showMessageDialog(null,pokenemigo.getNombrePoke()+" Uso "+pokenemigo.getAtaq4());
                     break;
             }
