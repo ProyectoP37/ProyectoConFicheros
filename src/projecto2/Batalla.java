@@ -34,9 +34,7 @@ public class Batalla {
             JOptionPane.showMessageDialog(null,pokenemigo.toString());}
             else{JOptionPane.showMessageDialog(null,"Has derrotado a "+pokenemigo.getNombrePoke());
                 
-                System.out.println(pokmio.getNivel());
-                System.out.println(pokmio.getAtaque());
-                System.out.println(pokmio.getHp());
+                
                 int nuevNiv=pokmio.getNivel();
                 
                 int aux=nuevNiv+1;
@@ -46,11 +44,7 @@ public class Batalla {
                 pokmio.setHp(aux*10);
                 vida1=pokmio.getHp();
                 vida2=pokenemigo.getHp();
-                /***********************************************/
-                System.out.println(pokmio.getNivel());
-                System.out.println(pokmio.getAtaque());
-                System.out.println(pokmio.getHp());
-                /***********************************************/
+                
                 JOptionPane.showMessageDialog(null,pokmio.getNombrePoke()+" Ha subido al nivel "+pokmio.getNivel());
                 yo.capturarPokemon(pokenemigo);
                 break;}
