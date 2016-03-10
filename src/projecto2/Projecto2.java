@@ -1,7 +1,7 @@
 package projecto2;
 
 import javax.swing.JOptionPane;
-
+import com.mario.Ficheros;
 /**
  *
  * @author mario
@@ -9,11 +9,12 @@ import javax.swing.JOptionPane;
 public class Projecto2 {
 
     public static void main(String[] args) {
-        LerFicheiro ler= new LerFicheiro();
+       
+        
         
 		String nombre;
 		int opcion;
-               // String res="";
+              
 		
 		nombre=JOptionPane.showInputDialog("Hola soy el profesor Oak.\nBienvenido a este juego.\nEl objetivo de este juego es llegar\nal nivel 15 con algun Pokemon.\n¿Cual es tu nombre?");
 		JOptionPane.showMessageDialog(null,"Hola "+ nombre+"\nAhora te entregare un Pokemon al nivel 5.\nSuerte en el el mundo Pokemon");
@@ -31,8 +32,9 @@ public class Projecto2 {
 				bat.comienza();
 			}
                         if(opcion==2){
-                            
-                             ler.lerFich();                           
+                           Ficheros obx=new Ficheros();
+                           obx.lerFich("descript.txt");
+                                                      
                             
                            
                         }
