@@ -12,7 +12,7 @@ public abstract class Pokemon {
     //Constructor
     public Pokemon(String nombrePoke) {
         
-        nivel= (int) (Math.random()*15)+1;//Le sumo 1 para tener como minimo el nivel 1.
+        nivel= (int) (Math.random()*2)+1;//Le sumo 1 para tener como minimo el nivel 1.
        
         this.ataque = nivel+20;
      
@@ -85,7 +85,7 @@ public abstract class Pokemon {
 
     @Override
     public String toString() {
-        return  nombrePoke + " , Nivel: " + nivel + " , Hp: " + hp;
+        return  nombrePoke + " , Nivel: " + nivel + " Ataque "+ataque + " , Hp: "+ hp;
     }
     
 
