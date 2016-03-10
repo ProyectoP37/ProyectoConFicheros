@@ -31,15 +31,14 @@ public class Projecto2 {
 				bat.comienza();
 			}
                         if(opcion==2){
-                            ler.crearArray();
-                            String res=JOptionPane.showInputDialog("¿Que Pokemon quieres ver?\nIntroduce el nombre del Pokemon: ");
-                            String fichero=res+".txt";
                             
-                            ler.escribir(fichero);
-                            ler.lerFich(fichero);
+                             ler.lerFich();                           
+                            
+                           
                         }
 			
 		}while(opcion != 3);
+                
                 
 	}
     }
