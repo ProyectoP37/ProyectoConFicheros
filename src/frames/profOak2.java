@@ -74,6 +74,7 @@ public class profOak2 extends javax.swing.JFrame {
         nombreRecibido.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         nombreRecibido.setAutoscrolls(false);
         nombreRecibido.setFocusable(false);
+        nombreRecibido.setOpaque(false);
         nombreRecibido.setRequestFocusEnabled(false);
         nombreRecibido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

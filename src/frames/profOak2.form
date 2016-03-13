@@ -88,6 +88,7 @@
         </Property>
         <Property name="autoscrolls" type="boolean" value="false"/>
         <Property name="focusable" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="false"/>
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>

@@ -27,9 +27,8 @@ public class pokedex extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        descrip = new javax.swing.JTextArea();
         pokem = new javax.swing.JLabel();
+        descrip = new javax.swing.JTextArea();
         dexImg = new javax.swing.JLabel();
         botBulba = new javax.swing.JButton();
         botCharm = new javax.swing.JButton();
@@ -45,16 +44,15 @@ public class pokedex extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jScrollPane1.setFocusable(false);
-        jScrollPane1.setOpaque(false);
-
-        descrip.setColumns(20);
-        descrip.setRows(5);
-        jScrollPane1.setViewportView(descrip);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 140, 190));
         getContentPane().add(pokem, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 160, 160));
+
+        descrip.setBackground(new java.awt.Color(51, 255, 0));
+        descrip.setColumns(20);
+        descrip.setLineWrap(true);
+        descrip.setRows(5);
+        descrip.setWrapStyleWord(true);
+        descrip.setFocusable(false);
+        getContentPane().add(descrip, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 140, 180));
 
         dexImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Pokedex.png"))); // NOI18N
         getContentPane().add(dexImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
@@ -154,7 +152,7 @@ public class pokedex extends javax.swing.JFrame {
 
     private void botCharmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCharmActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Charmander.jpeg")));
-        descrip.setText("");
+        descrip.setText("blablab");
     }//GEN-LAST:event_botCharmActionPerformed
 
     private void botBulbaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botBulbaActionPerformed
@@ -257,7 +255,6 @@ public class pokedex extends javax.swing.JFrame {
     private javax.swing.JTextArea descrip;
     private javax.swing.JLabel dexImg;
     private javax.swing.JButton jButton1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel pokem;
     // End of variables declaration//GEN-END:variables
 }
