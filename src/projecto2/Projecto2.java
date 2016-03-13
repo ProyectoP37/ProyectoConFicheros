@@ -1,7 +1,8 @@
 package projecto2;
+import frames.*;
 
-import javax.swing.JOptionPane;
-import com.mario.Ficheros;
+
+//import com.mario.Ficheros;
 /**
  *
  * @author mario
@@ -12,14 +13,15 @@ public class Projecto2 {
        
         
         
-		String nombre;
-		int opcion;
-              
+		//String nombre;
+		//int opcion;
+                frames.portada inicio=new frames.portada();
+                inicio.setVisible(true);
 		
-		nombre=JOptionPane.showInputDialog("Hola soy el profesor Oak.\nBienvenido a este juego.\nEl objetivo de este juego es llegar\nal nivel 15 con algun Pokemon.\n¿Cual es tu nombre?");
-		JOptionPane.showMessageDialog(null,"Hola "+ nombre+"\nAhora te entregare un Pokemon al nivel 5.\nSuerte en el el mundo Pokemon");
+		//nombre=JOptionPane.showInputDialog("Hola soy el profesor Oak.\nBienvenido a este juego.\nEl objetivo de este juego es llegar\nal nivel 15 con algun Pokemon.\n¿Cual es tu nombre?");
+		//JOptionPane.showMessageDialog(null,"Hola "+ nombre+"\nAhora te entregare un Pokemon al nivel 5.\nSuerte en el el mundo Pokemon");
 		
-		Entrenador yo = new Entrenador(nombre);
+		/*Entrenador yo = new Entrenador(nombre);
 		Batalla bat = new Batalla(yo);
 		
 			
@@ -32,8 +34,8 @@ public class Projecto2 {
 				bat.comienza();
 			}
                         if(opcion==2){
-                           Ficheros obx=new Ficheros();
-                           obx.lerFich("descript.txt");
+                          // Ficheros obx=new Ficheros();
+                          // obx.lerFich("descript.txt");
                                                       
                             
                            
@@ -41,7 +43,7 @@ public class Projecto2 {
 			
 		}while(opcion != 3);
                 
-                
+                */
 	}
     }
     

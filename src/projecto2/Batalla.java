@@ -30,7 +30,7 @@ public class Batalla {
         mipelea();
         if(pokenemigo.getHp()>0){
         supelea();
-        //if(pokenemigo.getHp()>0){
+        
             JOptionPane.showMessageDialog(null,pokenemigo.toString());}
             else{JOptionPane.showMessageDialog(null,"Has derrotado a "+pokenemigo.getNombrePoke());
                 
@@ -43,7 +43,7 @@ public class Batalla {
                 pokmio.setAtaque(aux+20);
                 pokmio.setHp(aux*10);
                 vida1=pokmio.getHp();
-                vida2=pokenemigo.getHp();
+                
                 
                 JOptionPane.showMessageDialog(null,pokmio.getNombrePoke()+" Ha subido al nivel "+pokmio.getNivel());
                 yo.capturarPokemon(pokenemigo);
