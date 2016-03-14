@@ -9,8 +9,10 @@ package frames;
  *
  * @author Acer
  */
+
 public class pokedex extends javax.swing.JFrame {
 
+    
     /**
      * Creates new form pokedex
      */
@@ -151,53 +153,63 @@ public class pokedex extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botCharmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCharmActionPerformed
+        
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Charmander.jpeg")));
-        descrip.setText("blablab");
+        descrip.setText("Pokemon de tipo fuego\n" +
+"Charmander es un pequeño lagarto bípedo.Tiene una pequeña llama en la punta de su cola que indica el estado físico y emocional del Pokemon.Si la llama desaparece o se apaga, moriría.");
     }//GEN-LAST:event_botCharmActionPerformed
 
     private void botBulbaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botBulbaActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Bulbasaur.jpg")));
-        descrip.setText("");
+        descrip.setText("Pokemon de tipo planta\n" +
+"Cuando este Pokemon nace, tiene una semilla en su lomo. Esta semilla crece y se desarrolla a lo largo del ciclo de vida de Bulbasaur a medida que se producen sus evoluciones.");
     }//GEN-LAST:event_botBulbaActionPerformed
 
     private void botSquirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botSquirActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Squirtle.jpeg")));
-        descrip.setText("");
+        descrip.setText("Pokemon de tipo agua\n" +
+"Squirtle es una de las especies más difíciles de encontrar. Son pequeñas tortugas color celeste con caparazones color café o rojas, con una cola enrollada que los distingue.");
     }//GEN-LAST:event_botSquirActionPerformed
 
     private void botEkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botEkanActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Ekans.jpeg")));
-        descrip.setText("");
+        descrip.setText("Pokemon de tipo veneno. Este Pokemon reside en las praderas, le gustan los lugares abiertos y cerca del agua para poder tener terreno a su gusto.");
     }//GEN-LAST:event_botEkanActionPerformed
 
     private void botPikaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botPikaActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Pikachu.jpg")));
-        descrip.setText("");
+        descrip.setText("Pokemon de tipo eléctrico\n" +
+"Pikachu es un pequeño roedor con una cola en forma de rayo en los machos; en las hembras la punta de la cola tiene forma de corazón. Pikachu crece en aŕeas con altas cantidades de actividad eléctrica natural.");
     }//GEN-LAST:event_botPikaActionPerformed
 
     private void botSandsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botSandsActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Sandshrew.jpeg")));
-        descrip.setText("");
+        descrip.setText("Pokemon de tipo tierra\n" +
+"Este Pokemon reside en los lugares abiertos donde le gusta cavar y hacer sus madrigueras, por esto mismo habita en lugares como el campo, los desiertos y algunas cuevas.");
     }//GEN-LAST:event_botSandsActionPerformed
 
     private void botMachActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMachActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Machop.png")));
-        descrip.setText("");
+        descrip.setText("Pokemon de tipo lucha\n" +
+"Su hábitat natural se encuentra principalmente en las montañas y en las cuevas, donde dispone de lo necesario para su fortalecimiento. ");
     }//GEN-LAST:event_botMachActionPerformed
 
     private void botGastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botGastActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Gastly.jpg")));
-        descrip.setText("");
+        descrip.setText("Pokemon de tipo fantasma\n" +
+"Está hecho de una masa negra gaseosa con un aura de gas violeta a su alrededor la cual es venenosa y asfixiaría a la mayoría de los mortales. Presenta dos grandes ojos y una boca.");
     }//GEN-LAST:event_botGastActionPerformed
 
     private void botOnixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botOnixActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Onix.jpeg")));
-        descrip.setText("");
+        descrip.setText(" Pokemon de tipo roca. \n" +
+"Onix es uno de los Pokemon más curiosos por su aspecto físico, teniendo forma similar a la de una lombriz hecha de roca. A pesar de su gran tamaño , pesa muy poco.");
     }//GEN-LAST:event_botOnixActionPerformed
 
     private void botDrowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botDrowActionPerformed
         pokem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Drowzee.jpg")));
-        descrip.setText("");
+        descrip.setText("Pokemon de tipo psíquico\n" +
+"Este Pokemon es de gran utilidad para las personas que padecen insomnio. Es capaz de dormir a una ciudad entera con su poder mental.");
     }//GEN-LAST:event_botDrowActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
