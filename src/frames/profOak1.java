@@ -45,6 +45,7 @@ public class profOak1 extends javax.swing.JFrame {
         fotoOak1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Oak.png"))); // NOI18N
         getContentPane().add(fotoOak1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 190));
 
+        jScrollPane1.setBackground(new java.awt.Color(153, 153, 255));
         jScrollPane1.setOpaque(false);
 
         jTextArea1.setBackground(new java.awt.Color(153, 153, 255));
@@ -59,7 +60,7 @@ public class profOak1 extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 340, -1));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setBackground(new java.awt.Color(102, 255, 102));
         jButton1.setText("Continuar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,7 +69,7 @@ public class profOak1 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 170, 30));
 
-        nombreEntrenador.setBackground(new java.awt.Color(153, 153, 255));
+        nombreEntrenador.setBackground(new java.awt.Color(102, 255, 102));
         nombreEntrenador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nombreEntrenadorActionPerformed(evt);

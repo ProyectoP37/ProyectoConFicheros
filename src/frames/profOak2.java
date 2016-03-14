@@ -55,7 +55,7 @@ public class profOak2 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 250, 20));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, 220, 20));
 
         present.setBackground(new java.awt.Color(204, 204, 255));
         present.setColumns(20);
@@ -95,7 +95,7 @@ public class profOak2 extends javax.swing.JFrame {
                 encantadoActionPerformed(evt);
             }
         });
-        getContentPane().add(encantado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 230, 30));
+        getContentPane().add(encantado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 400, 30));
 
         pack();
         setLocationRelativeTo(null);
