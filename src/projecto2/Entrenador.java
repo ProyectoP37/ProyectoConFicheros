@@ -70,9 +70,10 @@ public class Entrenador {
 
     public boolean capturarPokemon(Pokemon enemigo) {
         boolean capturado = false;
-        
-            int res = Integer.parseInt(JOptionPane.showInputDialog("Quieres hacerte con un " + enemigo.getNombrePoke() + "\n"
-                    + "1.Si\n2.No"));
+        int res;
+        do{
+             res = Integer.parseInt(JOptionPane.showInputDialog("Quieres hacerte con un " + enemigo.getNombrePoke() + "\n"
+                    + "1.Si\n2.No"));}while(res>2||res<1);
             switch (res) {
                 case 1:
                     mochila.add(enemigo);

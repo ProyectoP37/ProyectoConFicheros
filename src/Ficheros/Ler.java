@@ -1,7 +1,7 @@
 
 package Ficheros;
 import com.mario.Ficheros;
-import javax.swing.JOptionPane;
+
 /**
  *
  * @author mario
@@ -9,9 +9,13 @@ import javax.swing.JOptionPane;
 public class Ler {
 
     public static void main(String args[]) {
+        
+    }
+        public void ficheros(int res){
+            int resu=res;
         Ficheros fich = new Ficheros();
-        int res = Integer.parseInt(JOptionPane.showInputDialog("Que Pokemon quiere ver?\n1.Charmander\n2.Bulbasur\n3.Drowzee\n4.Ekans\n5.Gastly\n6.Machop\n7.Onix\n8.Pikachu\n9.Squirtle\n10.Sandshrew"));
-        switch (res) {
+        
+        switch (resu) {
             case 1:
                 fich.lerFich("Charmander.txt");
                 break;
@@ -44,7 +48,7 @@ public class Ler {
                 break;
 
         }
-        while (res < 11);
+        while (res > 11||res<1);
 
-    }
-}
+    }}
+
